@@ -1,13 +1,11 @@
 import './App.css'
-import AlertMessage from './components/AlertMessage'
-import NavBar from './components/NavBar'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <>
-      <AlertMessage paragraph = {"We are upgrading to the Session Network and migrating to Session Token."}/>
-      <NavBar/>
+      <Hero/>
     </>
     
   )
