@@ -5,7 +5,7 @@ export default function AlertMessage(props) {
     return(
         <>
             <div style ={{backgroundColor: "#333132" }} className="flex justify-center items-center py-5">
-                <p className = "text-white">{props.paragraph}</p>
+                <p className = "text-white mr-3">{props.paragraph}</p>
                 <Button buttonData = {"Learn More"}/>
             </div>
         </>
