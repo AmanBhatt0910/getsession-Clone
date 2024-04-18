@@ -14,8 +14,8 @@ export default function NavBar({ navItems }) {
                 <ul className="flex items-center font-bold">
                     {navItems.map((item, index) => (
                         <li key={index} className={index < navItems.length - 1 ? "mr-4" : ""}>
-                            <Link to={item.link} target="_blank" rel="noopener noreferrer">
-                                <span className="mr-3 transition-colors duration-300 hover:text-green-500 hover:border-b-2 hover:border-green-500 transition duration-300 ">{item.title}</span>
+                            <Link to={item.link} target={(item.newTab ? "_blank" : "")} rel="noopener noreferrer">
+                                <span className="mr-3 transition-colors duration-300 hover:text-green-500 hover:border-b-2 hover:border-green-500 ">{item.title}</span>
                             </Link>
                         </li>
                     ))}

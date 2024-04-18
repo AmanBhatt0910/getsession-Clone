@@ -1,29 +1,20 @@
-import './App.css';p
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Hero from './components/Hero'
-import Overview from "./components/Overview";
-import MainPageBottomSection from './components/MainPageBottomSection';
-import Blog from './components/NormalComponents/Blog';
+import './App.css';
+import Home from './components/Page/Home';
+import Blog from "./components/Page/Blog";
+import { Routes, Route } from 'react-router-dom';
+import Support from './components/Page/Support';
+import Layout from './components/Layout';
 
 function App() {
-  const router = createBrowserRouter[
-    {
-      path:"/",
-      element: <App/>
-    },
-    {
-      path:"/blog",
-      element: <Blog/>
-    }
-  ]
-
   return (
     <>
-      <Hero/>
-      <Overview/>
-      <MainPageBottomSection/>
-
-      <RouterProvider router={router}/>
+      <Layout>
+        <Routes>
+          <Route path="/" element = {<Home/>}/>
+          <Route path="/blog" element = {<Blog/>}/>
+          <Route path="/support" element = {<Support/>}/>
+        </Routes>
+      </Layout>
     </>
   )
 }

@@ -1,38 +1,20 @@
 import React from "react";
-import AlertMessage from "./NormalComponents/AlertMessage";
-import NavBar from "./NormalComponents/NavBar";
-import HeroSection1 from "./NormalComponents/HeroSection1";
+import Button from "./SmallComponents/Button";
 
-export default function Hero() {
-    const alertMessage = "We are upgrading to the Session Network and migrating to Session Token.";
-    const navItems = [
-        {
-            title:"GITHUB",
-            link: "https://github.com/oxen-io"
-        },
-        {
-            title:"BLOG",
-            link: "#"
-        },
-        {
-            title:"TECHNICALS",
-            link: "#"
-        },
-        {
-            title:"HELP",
-            link: "#"
-        },
-        {
-            title:"DONATE",
-            link: "#"
-        },
-        
-    ];
+export default function Hero(props) {
     return(
-        <>
-            <AlertMessage paragraph = {alertMessage}/>
-            <NavBar navItems = {navItems}/>
-            <HeroSection1 l1 = {"Send"} l2 = {"Messages,"} l3 = {"Not Metadata."}/>
-        </>
+        <div className="flex items-center justify-between">
+            <div className="flex flex-col ml-[100px] align-middle justify-center">
+                <div className="font-semibold text-6xl">
+                    <h1>{props.l1}</h1>
+                    <h1>{props.l2}</h1>
+                    <h1>{props.l3}</h1>
+                </div>
+                <div className="pt-5">
+                <Button buttonData={"Download"} />
+                </div>
+            </div>
+            <img className="w-2/4 mr-[100px] mt-[80px] mb-[100px]" src="/ui-showcase.webp" alt="section1Img" />
+        </div>
     )
 }
