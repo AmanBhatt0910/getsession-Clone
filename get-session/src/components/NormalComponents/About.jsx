@@ -7,7 +7,7 @@ const About = (props) => {
         <div className="w-[60%]">
             <div className="pl-[100px]">
             <h3 className="text-green-400 text-lg font-bold pt-10 pb-10">
-                <span className="mr-2">&mdash;</span>
+                <span className="mr-2">&mdash;&mdash;</span>
                 {props.heading}
             </h3>
             <p className="text-white text-4xl leading-snug">{props.paragraph}</p>

@@ -5,7 +5,29 @@ import HeroSection1 from "./NormalComponents/HeroSection1";
 
 export default function Hero() {
     const alertMessage = "We are upgrading to the Session Network and migrating to Session Token.";
-    const navItems = ["GITHUB", "BLOG", "TECHNICALS", "HELP", "DONATE"];
+    const navItems = [
+        {
+            title:"GITHUB",
+            link: "https://github.com/oxen-io"
+        },
+        {
+            title:"BLOG",
+            link: "#"
+        },
+        {
+            title:"TECHNICALS",
+            link: "#"
+        },
+        {
+            title:"HELP",
+            link: "#"
+        },
+        {
+            title:"DONATE",
+            link: "#"
+        },
+        
+    ];
     return(
         <>
             <AlertMessage paragraph = {alertMessage}/>

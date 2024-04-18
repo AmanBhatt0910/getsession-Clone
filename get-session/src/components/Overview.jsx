@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./NormalComponents/About";
 import Benefits from "./NormalComponents/Benefits";
+import Features from "./NormalComponents/Features";
 
 const Overview = ()=> {
     const heading = "What is Session?";
@@ -9,6 +10,7 @@ const Overview = ()=> {
         <>
             <About heading = {heading}  paragraph = {paragraph}/>
             <Benefits heading = "Benefits"/>
+            <Features heading = "Features"/>
         </>
     )
 }
